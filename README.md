@@ -11,5 +11,5 @@ This website provides all the possible visualizations based on the analytics per
 
 Tech Stack:
 
-Frontend - HTML, CSS, Bootstrap
-Backend (Analytics) - Python (Folium library for map integration)
+1. Frontend - HTML, CSS, Bootstrap
+2. Backend (Analytics) - Python (Folium library for map integration)
