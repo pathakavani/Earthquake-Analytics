@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style/bootstrap.min.css">
+  <title></title>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+      <div class="sidebar-sticky">
+        <ul class="nav flex-column" style="">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">
+              <span data-feather="home"></span>
+              <h1>HOME PAGE <span class="sr-only">(current)</span></h1>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mag_category_vis.html">
+              <span data-feather="file"></span>
+              Magnitude Category Visualization
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="heatmap.html">
+              <span data-feather="layers"></span>
+             Heatmap Based on Magnitude
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="null.html">
+              <span data-feather="file"></span>
+              Null Values Heatmap
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="magn_graph.html">
+              <span data-feather="file"></span>
+              Magnitude Histogram with Kernel Density Estimation
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="depthanalysis.html">
+              <span data-feather="shopping-cart"></span>
+              Depth Analysis
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="corrmd.html">
+              <span data-feather="file"></span>
+              Correlation Between Magnitude and Depth
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="types_earth.html">
+              <span data-feather="bar-chart-2"></span>
+            Types of Earthquake
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="types_magn.html">
+              <span data-feather="layers"></span>
+             Types of Magnitude
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="earth_status.html">
+              <span data-feather="layers"></span>
+             Earthquake Status
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">CORRELATION BETWEEN MAGNITUDE AND DEPTH        </h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+        </div>
+      </div>
+      <h5>The above pairplot gives the correlation between Magnitude Seismic Stations and Depth Seismic Stations .Both of these have a positive correlation but some outliers do exist.</h5>
+      <canvas id="canvas_image"></canvas>
+<style>
+#canvas_image
+{
+   background-image:url('images/seismic1.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+    height: 500px;
+  width: 1200px;
+ 
+}
+</style> <br>
+
+    </main>
+  </div>
+</div>
+</body>
+<script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scroll.js"></script>
+</html>
+
+
+
