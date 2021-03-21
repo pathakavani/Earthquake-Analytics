@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_aaaa9378c4fa436b90571c7488a4681d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+           <div class="jumbotron">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="index.html">MAGNITUDE CATEGORY VISUALIZATION</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <!--<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
+      </li>
+      <li class="nav-item">
+        <!--<a class="nav-link" href="#">Link</a>-->
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Magnitude Categories
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="greater_8.html">Magnitudes Greater than 8</a>
+          <a class="dropdown-item" href="btw.html">Magnitude Between 5.5 and 8</a>
+          <a class="dropdown-item" href="Max1.html">Maximum Magnitude</a>
+
+          <div class="dropdown-divider"></div>
+          <!--<a class="dropdown-item" href="#">Something else here</a>-->
+        </div>
+      </li>
+      <li class="nav-item">
+        <!--<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <!--<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+    </form>
+  </div>
+</nav>
+<h4> Below is the Basemap of the geographical area. Further, on selecting one of the magnitude ranges will provide the plottings of varios sources of Eathquakes according to magnitude.</h4>
+</div>
+            <div class="folium-map" id="map_aaaa9378c4fa436b90571c7488a4681d" ></div>
+        
+</body>
+<script>    
+    
+            var map_aaaa9378c4fa436b90571c7488a4681d = L.map(
+                "map_aaaa9378c4fa436b90571c7488a4681d",
+                {
+                    center: [38.297, 142.373],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_aaaa9378c4fa436b90571c7488a4681d);
+
+            
+
+        
+    
+            var tile_layer_02268ee1ee264c0d9a9a24dad0c6658f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_aaaa9378c4fa436b90571c7488a4681d);
+        
+    
+            var marker_8a640a0d2f6446a9a204ac469da6ba63 = L.marker(
+                [38.297, 142.373],
+                {"radius": 15}
+            ).addTo(map_aaaa9378c4fa436b90571c7488a4681d);
+        
+    
+        var popup_b5b2845b472b4426a88f1251d09de497 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3e79051473b14f4db8691732e853cf02 = $(`<div id="html_3e79051473b14f4db8691732e853cf02" style="width: 100.0%; height: 100.0%;">Maximum Magnitude :9.1   </div>`)[0];
+            popup_b5b2845b472b4426a88f1251d09de497.setContent(html_3e79051473b14f4db8691732e853cf02);
+        
+
+        marker_8a640a0d2f6446a9a204ac469da6ba63.bindPopup(popup_b5b2845b472b4426a88f1251d09de497)
+        ;
+
+        
+    
+    
+            marker_8a640a0d2f6446a9a204ac469da6ba63.bindTooltip(
+                `<div>
+                     Click for more information
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1f76c845affa476eb17db50bafb4eee6 = L.marker(
+                [3.295, 95.982],
+                {"radius": 15}
+            ).addTo(map_aaaa9378c4fa436b90571c7488a4681d);
+        
+    
+        var popup_4e4d45928f364366853bf6d0126eaeae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c0e9426404cf47d592229c62890ef37b = $(`<div id="html_c0e9426404cf47d592229c62890ef37b" style="width: 100.0%; height: 100.0%;">Maximum Magnitude :9.1   </div>`)[0];
+            popup_4e4d45928f364366853bf6d0126eaeae.setContent(html_c0e9426404cf47d592229c62890ef37b);
+        
+
+        marker_1f76c845affa476eb17db50bafb4eee6.bindPopup(popup_4e4d45928f364366853bf6d0126eaeae)
+        ;
+
+        
+    
+    
+            marker_1f76c845affa476eb17db50bafb4eee6.bindTooltip(
+                `<div>
+                     Click for more information
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

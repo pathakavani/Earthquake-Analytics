@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style/bootstrap.min.css">
+	<title></title>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+      <div class="sidebar-sticky">
+        <ul class="nav flex-column" style="">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">
+              <span data-feather="home"></span>
+              <h1>HOME PAGE <span class="sr-only">(current)</span></h1>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mag_category_vis.html">
+              <span data-feather="file"></span>
+              Magnitude Category Visualization
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="heatmap.html">
+              <span data-feather="layers"></span>
+             Heatmap Based on Magnitude
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="null.html">
+              <span data-feather="file"></span>
+              Null Values Heatmap
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="magn_graph.html">
+              <span data-feather="file"></span>
+              Magnitude Histogram with Kernel Density Estimation
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="depthanalysis.html">
+              <span data-feather="shopping-cart"></span>
+              Depth Analysis
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="corrmd.html">
+              <span data-feather="file"></span>
+              Correlation Between Magnitude and Depth
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="types_earth.html">
+              <span data-feather="bar-chart-2"></span>
+            Types of Earthquake
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="types_magn.html">
+              <span data-feather="layers"></span>
+             Types of Magnitude
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="earth_status.html">
+              <span data-feather="layers"></span>
+             Earthquake Status
+            </a>
+          </li>
+         
+        
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2" style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EARTHQUAKE ANALYSIS USING PYTHON</h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+        </div>
+      </div>
+    <!--  <video autoplay muted loop id="myVideo">
+  <source src="images/vid1.gif" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>-->
+<div class="myVideo">
+<img src="images/vid1.gif">
+</div>
+<style>
+#myVideo {
+  min-width: 100px; 
+  min-height: 400px;
+}
+</style>
+<b><h5>The National Earthquake Information Center (NEIC) determines the location and size of all significant earthquakes that occur worldwide and disseminates this information immediately to national and international agencies, scientists, critical facilities, and the general public. The NEIC compiles and provides to scientists and to the public an extensive seismic database that serves as a foundation for scientific research through the operation of modern digital national and global seismograph networks and cooperative international agreements. The NEIC is the national data center and archive for earthquake information.<br><br>
+
+This dataset includes a record of the date, time, location, depth, magnitude, and source of every earthquake with a reported magnitude 5.5 or higher since 1965. </b>
+<br>
+Columns:
+<ol>
+1. Date <br>
+2. Time <br>
+3. Latitude<br>
+4. Longitude <br>
+5. Type <br>
+6. Depth - Depth at which earthquake occurred <br>
+7. Depth Error - +1/-1 or 2km is  <br>
+8. Depth Seismic Stations - Stations at a certain depth where earthquakes are recorded <br>
+9. Magnitude Magnitude Type can be based on any of the following: <br>
+     &nbsp;&nbsp;&nbsp;ML:             Local (Richter) magnitude - The Richter magnitude of an earthquake is determined from the logarithm of the amplitude of waves recorded by seismographs. <br><br>
+     &nbsp;&nbsp;&nbsp;MS:             Surface wave magnitude scale - It is based on measurements in Rayleigh surface waves that travel primarily along the uppermost layers of the Earth. <br><br>
+     &nbsp;&nbsp;&nbsp;MW (Mw):        Moment magnitude scale - It is a measure of an earthquake's magnitude ("size" or strength) based on its seismic moment (a measure of the "work" done by the earthquake). <br><br>
+     &nbsp;&nbsp;&nbsp;MD (Md):        Duration magnitude/signal duration - It is based on the realization that on a recorded earthquake seismogram, the total length of the seismic wavetrain ,reflects it's size.<br><br>
+10. Magnitude Error <br>
+11. Magnitude Seismic Stations <br>
+12. Azimuthal Gap <br>
+13. Horizontal Distance <br>
+14. Horizontal Error <br>
+15. Root Mean Square <br>
+16. ID <br>
+17. Source <br>
+18. Location Source <br>
+19. Magnitude Source : <b>Harvard University Seismic Station (HRV) , US Tsunami Program</b> <br>
+                           
+20. Status <br></ol>
+In this project,we will use Folium pakage to analyze the dataset. Folium is a Python Library that can allow us to visualize spatial data in an interactive manner, straight within the notebooks environment. The library is highly intuitive to use, and it offers a high degree of interactivity.</h5>
+    </main>
+  </div>
+</div>
+</body>
+<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/scroll.js"></script>
+</html>
+

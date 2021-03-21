@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style/bootstrap.min.css">
+  <title></title>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+      <div class="sidebar-sticky">
+        <ul class="nav flex-column" style="">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">
+              <span data-feather="home"></span>
+              <h1>HOME PAGE <span class="sr-only">(current)</span></h1>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mag_category_vis.html">
+              <span data-feather="file"></span>
+              Magnitude Category Visualization
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="heatmap.html">
+              <span data-feather="layers"></span>
+             Heatmap Based on Magnitude
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="null.html">
+              <span data-feather="file"></span>
+              Null Values Heatmap
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="magn_graph.html">
+              <span data-feather="file"></span>
+              Magnitude Histogram with Kernel Density Estimation
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="depthanalysis.html">
+              <span data-feather="shopping-cart"></span>
+              Depth Analysis
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="corrmd.html">
+              <span data-feather="file"></span>
+              Correlation Between Magnitude and Depth
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="types_earth.html">
+              <span data-feather="bar-chart-2"></span>
+            Types of Earthquake
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="types_magn.html">
+              <span data-feather="layers"></span>
+             Types of Magnitude
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="earth_status.html">
+              <span data-feather="layers"></span>
+             Earthquake Status
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">TYPES OF MAGNITUDE BASED ON HOW IT IS CALCULATED          </h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+        </div>
+      </div>
+      <h5>The above countplot depicts the types of <b>MAGNITUDE</b> based on how the magnitude is calculated. <br>
+Magnitude Type can be based on any of the following: <br>
+    <ol>
+     1. ML:             Local (Richter) magnitude - The Richter magnitude of an earthquake is determined from the logarithm of the amplitude of waves recorded by seismographs. <br>
+     2. MS:             Surface wave magnitude scale - It is based on measurements in Rayleigh surface waves that travel primarily along the uppermost layers of the Earth. <br>
+     3. MW (Mw):        Moment magnitude scale - It is a measure of an earthquake's magnitude ("size" or strength) based on its seismic moment (a measure of the "work" done by the earthquake). <br>
+     4. MD (Md):        Duration magnitude/signal duration - It is based on the realization that on a recorded earthquake seismogram, the total length of the seismic wavetrain ,reflects it's size.<br>
+     5. MH : Non-standard magnitude method. Generally used when standard methods will not work. Sometimes use as a temporary designation until the magnitude is   finalized.<br>
+     5. MB : A magnitude for regional earthquakes based on the amplitude of the Lg surface waves as recorded on short-period instruments. Only authoritative for smaller events in the central and eastern United States, typically <4.0 for which there is no mb or moment magnitude.<br>
+     6. MWW : Derived from a centroid moment tensor inversion of the W-phase (~50-2000 s; pass band based on size of EQ). Computed for all M5.0 or larger earthquakes worldwide, but generally robust for all M5.5 worldwide. Provides consistent results to M~4.5 within a regional network of high-quality broadband stations. Authoritative USGS magnitude if computed. <br>
+     7. MWR : Based on the scalar seismic-moment of the earthquake, derived from moment tensor inversion of the whole seismogram at regional distances (~10-100 s; pass band based on size of EQ).<br>
+     8. MWB : Derived from moment tensor inversion of long-period (~20-200 s; pass band based on size of EQ) body-waves (P- and SH).<br>
+     9. MWC : Derived from a centroid moment tensor inversion of the long-period surface waves (~100-2000 s; pass band based on size of EQ). <br></ol>
+     
+<b>Conclusion</b> : The bars of the countplots depict the count of types of magnitudes based on the considered dataset.</h5>
+      <canvas id="canvas_image"></canvas>
+<style>
+#canvas_image
+{
+   background-image:url('images/Magnitude Type.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+    height: 500px;
+  width: 1200px;
+ 
+}
+</style> <br>
+
+    </main>
+  </div>
+</div>
+</body>
+<script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scroll.js"></script>
+</html>
+
